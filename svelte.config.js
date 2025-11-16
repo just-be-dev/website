@@ -14,7 +14,7 @@ const config = {
 	preprocess: [
 		vitePreprocess(),
 		mdsvex({
-			extensions: ['.svx', '.md'],
+			extensions: ['.md'],
 			layout: {
 				blog: join(__dirname, './src/lib/layouts/blog.svelte'),
 				project: join(__dirname, './src/lib/layouts/project.svelte'),
