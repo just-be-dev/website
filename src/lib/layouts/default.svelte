@@ -1,5 +1,9 @@
-<script>
-	let { title } = $props();
+<script module>
+	export { default as a } from '~/lib/components/Link.svelte';
+</script>
+
+<script lang="ts">
+	let { title, children } = $props();
 </script>
 
 <article class="px-4 py-8">
@@ -10,6 +14,6 @@
 	{/if}
 
 	<div class="prose prose-invert max-w-none">
-		<slot />
+		{@render children?.()}
 	</div>
 </article>
