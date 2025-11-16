@@ -1,2 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+/* Define CSS layers for proper cascade order */
+@layer base, utils, components;
+
+/* Tailwind CSS */
 @import 'tailwindcss';
-@plugin '@tailwindcss/typography';
+
+/* Tailwind theme configuration using Webtui color tokens */
+@theme {
+	/* Background colors - map to Webtui background levels */
+	--color-0: var(--background0);
+	--color-1: var(--background1);
+	--color-2: var(--background2);
+	--color-3: var(--background3);
+
+	/* Foreground colors - map to Webtui foreground levels */
+	--color-fg-0: var(--foreground0);
+	--color-fg-1: var(--foreground1);
+	--color-fg-2: var(--foreground2);
+
+	/* Border colors - map to Webtui border tokens */
+	--color-box: var(--box-border-color);
+	--color-table: var(--table-border-color);
+	--color-separator: var(--separator-color);
+
+	/* Separator background */
+	--color-separator-bg: var(--separator-background);
+
+	/* Disable default Tailwind color palette (except ANSI colors) */
+	--color-slate-*: initial;
+	--color-gray-*: initial;
+	--color-zinc-*: initial;
+	--color-neutral-*: initial;
+	--color-stone-*: initial;
+	--color-orange-*: initial;
+	--color-amber-*: initial;
+	--color-lime-*: initial;
+	--color-emerald-*: initial;
+	--color-teal-*: initial;
+	--color-sky-*: initial;
+	--color-indigo-*: initial;
+	--color-blue-*: initial;
+	--color-yellow-*: initial;
+	--color-red-*: initial;
+	--color-green-*: initial;
+	--color-violet-*: initial;
+	--color-purple-*: initial;
+	--color-fuchsia-*: initial;
+	--color-pink-*: initial;
+	--color-rose-*: initial;
+
+	/* ANSI Terminal Colors - Basic (0) and Bright (1) variants */
+	--color-black-0: #000000;
+	--color-black-1: #555555;
+	--color-red-0: #aa0000;
+	--color-red-1: #ff5555;
+	--color-green-0: #00aa00;
+	--color-green-1: #55ff55;
+	--color-yellow-0: #aa5500;
+	--color-yellow-1: #ffff55;
+	--color-blue-0: #0000aa;
+	--color-blue-1: #5555ff;
+	--color-magenta-0: #aa00aa;
+	--color-magenta-1: #ff55ff;
+	--color-cyan-0: #00aaaa;
+	--color-cyan-1: #55ffff;
+	--color-white-0: #aaaaaa;
+	--color-white-1: #ffffff;
+}
+
+/* WebTUI - Base styles and components */
+@import '@webtui/css/base.css';
+@import '@webtui/css/components/button.css';
+@import '@webtui/css/components/pre.css';
+@import '@webtui/css/components/table.css';
+@import '@webtui/css/components/separator.css';
+@import '@webtui/css/components/badge.css';
+@import '@webtui/css/utils/box.css';
+
+/* Monospace font stack for TUI aesthetic */
+:root {
+	font-family:
+		'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco',
+		'Courier New', monospace;
+}
+
+/* Single font size for true TUI aesthetic */
+* {
+	font-family:
+		'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco',
+		'Courier New', monospace !important;
+	font-size: 1rem !important;
+	line-height: 1.5 !important;
+}
+
+/* Reset heading sizes to match body */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 1rem !important;
+	font-weight: 700;
+}
+
+/* Ensure code blocks also use same size */
+code,
+pre {
+	font-size: 1rem !important;
+}
+
+/* Markdown prose link styles */
+.prose a {
+	transition:
+		color 150ms,
+		background-color 150ms;
+}
+
+.prose a:hover,
+.prose a:focus-visible {
+	background-color: var(--background1);
+	color: var(--foreground0);
+	outline: none;
+}
