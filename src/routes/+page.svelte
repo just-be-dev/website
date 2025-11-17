@@ -1,34 +1,29 @@
 <script>
 	import Content from '~/content/home.md';
+	import LinkBox from '$lib/components/LinkBox.svelte';
 </script>
 
 <div class="px-4 pt-4 pb-8">
 	<Content />
 
-	<div class="mt-12 pt-8 border-t border-gray-700">
+	<div class="mt-2">
 		<h2 class="font-bold mb-4">Recent Activity</h2>
 		<div class="grid gap-4">
-			<a
+			<LinkBox
 				href="/blog"
-				class="block p-4 border border-gray-700 hover:border-blue-400 transition-colors"
-			>
-				<h3 class="font-bold text-blue-400 mb-2">Blog Posts →</h3>
-				<p class="text-gray-400">Thoughts on software, tools, and technology</p>
-			</a>
-			<a
+				title="Blog Posts"
+				description="Thoughts on software, tools, and technology"
+			/>
+			<LinkBox
 				href="/projects"
-				class="block p-4 border border-gray-700 hover:border-blue-400 transition-colors"
-			>
-				<h3 class="font-bold text-blue-400 mb-2">Projects →</h3>
-				<p class="text-gray-400">Things I'm building and experimenting with</p>
-			</a>
-			<a
+				title="Projects"
+				description="Things I'm building and experimenting with"
+			/>
+			<LinkBox
 				href="/research"
-				class="block p-4 border border-gray-700 hover:border-blue-400 transition-colors"
-			>
-				<h3 class="font-bold text-blue-400 mb-2">Research →</h3>
-				<p class="text-gray-400">Notes and explorations in computing</p>
-			</a>
+				title="Research"
+				description="Notes and explorations in computing"
+			/>
 		</div>
 	</div>
 </div>
