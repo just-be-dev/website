@@ -8,6 +8,12 @@ import Date from "~/lib/components/Date.svelte"
 
 # Work History
 
+## Norm.ai
+
+<Date>Aug '25 - Present</Date>
+
+I'm currently a technical director at Norm.ai. I'm helping the team build out internal products to help empower our legal engineers while also driving a culture of continuous learning and improvement.
+
 ## Val.town
 
 <Date>Nov '24 - Feb '25</Date>
@@ -53,3 +59,15 @@ Artsy is open source by default so _most_ of my work over the three years I was 
 At Scripps I was responsible for helping improve performance and introduce frontend best practices. I revamped the build system, worked extensively to improve page performance, and co-designed a theming system that enabled HGTV, Travel Channel, and Food Network to effectively use the same markup while retaining their unique brand styling. I helped lead a cross platform effort to consolidate HGTV, Food Network, and Travel Channel on a single platform.
 
 I also made a lot of mistakes. Both technically and culturally, there was a lot that I learned during that role and after that helped me be a better leader, engineer, and person.
+
+## Vencore
+
+<Date>Aug '14 - Aug '15</Date>
+
+I built features for a rotary aircraft maintenance system using Ext.js and ColdFusion.
+
+## Adtran
+
+<Date>Aug '11 - Aug '14</Date>
+
+I worked every other semester as a co-op engineer at Adtran while in college. I rotated from writing embedded C++ on an NetVanta VOIP PBX to designing a voltage anomaly detection system for another networking device, and helping build out an interface to monitor and manage automated tests across a fleet of networked devices. This is also where I got my start in open source, contributing to the [Selenium 2 binding for Robot Framework](https://github.com/robotframework/Selenium2Library).
