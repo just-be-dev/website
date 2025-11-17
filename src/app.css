@@ -1,4 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+/* 0xProto font */
+@font-face {
+	font-family: '0xProto';
+	src:
+		url('/fonts/0xProto-Regular.woff2') format('woff2'),
+		url('/fonts/0xProto-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: '0xProto';
+	src:
+		url('/fonts/0xProto-Bold.woff2') format('woff2'),
+		url('/fonts/0xProto-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: '0xProto';
+	src:
+		url('/fonts/0xProto-Italic.woff2') format('woff2'),
+		url('/fonts/0xProto-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
 
 /* Define CSS layers for proper cascade order */
 @layer base, utils, components;
@@ -81,17 +110,17 @@
 /* Monospace font stack for TUI aesthetic */
 :root {
 	font-family:
-		'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco',
-		'Courier New', monospace;
+		'0xProto', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New',
+		monospace;
 }
 
 /* Single font size for true TUI aesthetic */
 * {
 	font-family:
-		'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco',
-		'Courier New', monospace !important;
-	font-size: 1rem !important;
-	line-height: 1.5 !important;
+		'0xProto', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New',
+		monospace;
+	font-size: 1rem;
+	line-height: 1.5;
 }
 
 /* Reset heading sizes to match body */
