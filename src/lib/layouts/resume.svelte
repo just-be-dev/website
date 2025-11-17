@@ -3,21 +3,17 @@
 </script>
 
 <script lang="ts">
-	let { title, children } = $props();
+	let { children } = $props();
 </script>
 
-<article class="px-4 py-8">
-	{#if title}
-		<header class="mb-8 border-b border-gray-700 pb-4">
-			<h1 class="font-bold">{title}</h1>
-		</header>
-	{/if}
-
+<article data-resume class="px-4 py-8">
 	{@render children?.()}
 </article>
 
 <style>
-	:global(h1, p, .date-component) {
+	article[data-resume] :global(h1),
+	article[data-resume] :global(.date-component),
+	article[data-resume] :global(p) {
 		margin-bottom: 1lh;
 	}
 </style>
