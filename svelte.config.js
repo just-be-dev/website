@@ -19,6 +19,7 @@ const config = {
 				blog: join(__dirname, './src/lib/layouts/blog.svelte'),
 				project: join(__dirname, './src/lib/layouts/project.svelte'),
 				research: join(__dirname, './src/lib/layouts/research.svelte'),
+				resume: join(__dirname, './src/lib/layouts/resume.svelte'),
 				_: join(__dirname, './src/lib/layouts/default.svelte'),
 			},
 			smartypants: {
