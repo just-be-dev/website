@@ -16,4 +16,10 @@
 	article[data-resume] :global(p) {
 		margin-bottom: 1lh;
 	}
+
+	article[data-resume] :global(dfn) {
+		text-decoration: underline dotted;
+		cursor: help;
+		font-style: normal;
+	}
 </style>

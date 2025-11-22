@@ -1,5 +1,8 @@
 ---
 layout: resume
+
+# Definitions
+legal_engineer: A lawyer who facilitates the automation of regulatory checks by encoding legal knowledge in an AI automation platform
 ---
 
 <script>
@@ -12,7 +15,7 @@ import Date from "~/lib/components/Date.svelte"
 
 <Date>Aug '25 - Present</Date>
 
-I'm currently a technical director at Norm.ai. I'm helping the team build out internal products to help empower our legal engineers while also driving a culture of continuous learning and improvement.
+I'm currently a technical director at Norm.ai. I'm helping the team build out internal products to help empower our <dfn title={legal_engineer}>legal engineers</dfn> while also driving a culture of continuous learning and improvement.
 
 ## Val.town
 
