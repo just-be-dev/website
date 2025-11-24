@@ -6,8 +6,6 @@ tags: [meta, web, svelte]
 layout: blog
 ---
 
-# Welcome to My New Site
-
 I've rebuilt my personal site with a focus on simplicity and content. This site is:
 
 - **Markdown-driven**: All content is written in Markdown using [mdsvex](https://mdsvex.pngwn.io/)

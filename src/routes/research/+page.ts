@@ -1,11 +1,17 @@
+import type { MarkdownModule } from '$lib/../mdsvex';
+
 export async function load() {
-	const notes = import.meta.glob('/src/content/research/*.md', { eager: true });
+	const notes = import.meta.glob<MarkdownModule>('/src/content/research/*.md', {
+		eager: true,
+	});
 
 	const processedNotes = Object.entries(notes).map(([path, note]) => {
-		const slug = path.split('/').pop()?.replace('.md', '') || '';
+		const filename = path.split('/').pop()?.replace('.md', '') || '';
+		// Strip the 4-digit numerical prefix (e.g., "0000_parsing-techniques" -> "parsing-techniques")
+		const slug = filename.replace(/^\d{4}_/, '');
 		return {
 			slug,
-			metadata: (note as any).metadata || {},
+			metadata: note.metadata || {},
 		};
 	});
 

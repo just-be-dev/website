@@ -16,4 +16,24 @@ declare module '*.md' {
 	export default class extends SvelteComponent {}
 }
 
+// Support path alias for .md files
+declare module '~/content/home.md' {
+	import type { SvelteComponent } from 'svelte';
+	export default class extends SvelteComponent {}
+}
+
+declare module '~/content/work.md' {
+	import type { SvelteComponent } from 'svelte';
+	export default class extends SvelteComponent {}
+}
+
+// Extend Svelte elements to support custom attributes
+declare module 'svelte/elements' {
+	export interface HTMLAttributes<T> {
+		'variant-'?: string;
+		'box-'?: string;
+		'shear-'?: string;
+	}
+}
+
 export {};
