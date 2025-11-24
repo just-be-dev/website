@@ -1,9 +1,12 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import type { HTMLAttributes } from 'svelte/elements';
-	import type { HTMLProps } from 'svelte/svelte-html';
+	import type { HTMLAnchorAttributes } from 'svelte/elements';
 
-	let { children, ...props }: HTMLProps<'a', HTMLAttributes<any>> = $props();
+	type Props = HTMLAnchorAttributes & {
+		children: Snippet;
+	};
+
+	let { children, ...props }: Props = $props();
 </script>
 
 <a {...props} class="text-accent font-bold focus-visible:outline-none">
