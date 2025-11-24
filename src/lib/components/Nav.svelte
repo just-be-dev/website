@@ -39,7 +39,7 @@
 			<Email />
 		</a>
 		<a
-			href="https://github.com/just-be"
+			href="https://github.com/just-be-dev"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="icon-link"
@@ -59,7 +59,7 @@
 			<Bluesky />
 		</a>
 		<a
-			href="https://twitter.com/justbe_dev"
+			href="https://twitter.com/just_be_dev"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="icon-link"
@@ -69,7 +69,7 @@
 			<Twitter />
 		</a>
 		<a
-			href="https://linkedin.com/in/justinbennett"
+			href="https://linkedin.com/in/jtbnnt"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="icon-link"
