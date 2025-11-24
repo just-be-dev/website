@@ -72,6 +72,13 @@
 	--color-accent: var(--color-blue-0);
 }
 
+@custom-variant hocus {
+	&:hover,
+	&:focus {
+		@slot;
+	}
+}
+
 /* WebTUI - Base styles and components */
 @import '@webtui/css/base.css';
 @import '@webtui/css/components/button.css';

@@ -13,9 +13,9 @@
 				<li>
 					<a
 						href="/blog/{post.slug}"
-						class="flex gap-4 bg-0 focus:invert hover:invert -mx-[1ch] px-[1ch] outline-none group"
+						class="flex gap-4 bg-0 hocus:invert -mx-[1ch] px-[1ch] outline-none group"
 					>
-						<span class="text-fg-2 shrink-0 group-hover:text-accent group-focus:text-accent">
+						<span class="text-fg-2 shrink-0 group-hocus:text-accent">
 							{#if post.metadata.date}
 								{new Date(post.metadata.date).toLocaleDateString('en-US', {
 									year: 'numeric',
